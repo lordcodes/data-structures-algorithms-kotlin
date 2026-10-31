@@ -82,7 +82,7 @@ class ReverseArrayTest {
   fun `reverses an odd number of elements preserving duplicates and the middle element`() {
     assertContentEquals(
       arrayOf("b", "a", "c", "b", "a"),
-      reverseArray(arrayOf("a", "b", "c", "a", "b"))
+      reverseArray(arrayOf("a", "b", "c", "a", "b")),
     )
   }
 
@@ -90,7 +90,7 @@ class ReverseArrayTest {
   fun `preserves null elements`() {
     assertContentEquals(
       arrayOf(null, "b", null, "a"),
-      reverseArray(arrayOf("a", null, "b", null))
+      reverseArray(arrayOf("a", null, "b", null)),
     )
   }
 
