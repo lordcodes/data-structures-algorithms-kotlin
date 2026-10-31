@@ -2,26 +2,20 @@ package com.lordcodes.kotlinproblems.arrays
 
 /**
  * Returns the elements of [array] in reverse order.
- * Time: O(n). Additional space: O(1) when [inplace] is true, O(n) when [inplace] is false.
+ * Time: O(n). Additional space: O(1).
  *
  * @param array the array to reverse.
- * @param inplace whether to modify [array] in place; defaults to false.
- * @return [array] reversed in place if [inplace] is true; otherwise a reversed copy.
+ * @return [array] reversed in place.
  */
-fun <T> reverseArray(array: Array<T>, inplace: Boolean = false): Array<T> {
-  val newArray = if (inplace) {
-    array
-  } else {
-    array.clone()
-  }
+fun <T> reverseArray(array: Array<T>): Array<T> {
   var left = 0
-  var right = newArray.lastIndex
+  var right = array.lastIndex
   while (left < right) {
-    val value = newArray[left]
-    newArray[left] = newArray[right]
-    newArray[right] = value
+    val value = array[left]
+    array[left] = array[right]
+    array[right] = value
     left++
     right--
   }
-  return newArray
+  return array
 }
