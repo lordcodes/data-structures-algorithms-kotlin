@@ -25,6 +25,18 @@ Run tests for one problem:
 
 Test reports are written to `problems/build/reports/tests/test/index.html`.
 
+## Code quality
+
+Ktlint formats and lints Kotlin sources, tests, and Gradle Kotlin scripts.
+
+```sh
+./gradlew ktlintFormat  # Format files
+./gradlew ktlintCheck   # Check formatting and lint without changing files
+./gradlew check         # Run formatting checks, lint, and all tests
+```
+
+GitHub Actions runs the checks.
+
 ## Add a problem
 
 1. Add a solution in `problems/src/main/kotlin/com/lordcodes/kotlinproblems/<topic>/` with a descriptive function name. Document its inputs, result, and complexity.

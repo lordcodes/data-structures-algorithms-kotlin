@@ -6,6 +6,6 @@ package com.lordcodes.kotlinproblems.graph
  * Time: O(V + E). Additional space: O(V).
  */
 fun <T> breadthFirstSearch(graph: Map<T, List<T>>, start: T): List<T> {
-    val result = mutableListOf<T>()
-    return result
+  val result = mutableListOf<T>()
+  return result
 }
