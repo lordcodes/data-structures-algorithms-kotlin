@@ -11,7 +11,7 @@ package com.lordcodes.kotlinproblems.arrays
  * @param value the value to insert.
  * @return a new array containing one more element than [array].
  */
-inline fun <reified T> insertIntoArray(array: Array<T>, index: Int, value: T): Array<T> {
+inline fun <reified T> insertIntoArrayResizing(array: Array<T>, index: Int, value: T): Array<T> {
   require(index in 0..array.size)
 
   if (array.isEmpty()) {
