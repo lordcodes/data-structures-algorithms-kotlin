@@ -13,7 +13,7 @@ fun <T> removeFromArray(array: Array<T>, value: T): Int {
   var writeIndex = 0
   for (index in array.indices) {
     if (array[index] != value) {
-      array[writeIndex] = value
+      array[writeIndex] = array[index]
       writeIndex++
     }
   }
