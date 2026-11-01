@@ -2,7 +2,7 @@ package com.lordcodes.kotlinproblems.sort
 
 /**
  * Returns the elements of [array] sorted in ascending order using selection sort.
- * Target time: O(n²) in all cases. Additional space: O(1).
+ * Time: O(n²) in all cases. Additional space: O(1).
  *
  * @param array the array to sort. Empty arrays and duplicate values are supported; the input may be modified.
  * @return an array containing every original element in sorted order.
